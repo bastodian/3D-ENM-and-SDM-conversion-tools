@@ -1,17 +1,15 @@
 #!/bin/bash
 
-'''
-    This script combines ASCII grid files. ASCII grid files should be numbered to assure that they
-    will be combined in the right order (eg, 1.asc, 2.asc,..., n.asc).
-
-    Call script as follows:
-
-    ./combineASCII.sh /path/to/ASCII/files outputfile.asc
-
-    Author: Bastian Bentlage
-    Email: bastodian@gmail.com
-    License: Creative Commons Attribution
-'''
+#    This script combines ASCII grid files. ASCII grid files should be numbered to assure that they
+#    will be combined in the right order (eg, 1.asc, 2.asc,..., n.asc).
+#
+#    Call script as follows:
+#
+#    ./combineASCII.sh /path/to/ASCII/files outputfile.asc
+#
+#    Author: Bastian Bentlage
+#    Email: bastodian@gmail.com
+#    License: Creative Commons Attribution
 
 ASCII=$1
 OUTFILE=$2

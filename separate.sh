@@ -1,20 +1,18 @@
 #!/bin/bash
 
-'''
-    This script separates a combined ASCII grid file. You need to specifiy into how
-    many files the combined ASCII should be split.
-
-    Call script as follows:
-
-    ./combineASCII.sh /path/to/input/file /path/to/output num_of_files
-    
-    eg:
-    ./combineASCII.sh /path/to/input/file.asc /path/to/output 12
-
-    Author: Bastian Bentlage
-    Email: bastodian@gmail.com
-    License: Creative Commons Attribution
-'''
+#    This script separates a combined ASCII grid file. You need to specifiy into how
+#    many files the combined ASCII should be split.
+#
+#    Call script as follows:
+#
+#    ./combineASCII.sh /path/to/input/file /path/to/output num_of_files
+#    
+#    eg:
+#    ./combineASCII.sh /path/to/input/file.asc /path/to/output 12
+#
+#    Author: Bastian Bentlage
+#    Email: bastodian@gmail.com
+#    License: Creative Commons Attribution
 
 INFILE=$1
 OUTPATH=$2
