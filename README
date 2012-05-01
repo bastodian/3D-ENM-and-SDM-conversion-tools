@@ -17,7 +17,7 @@ $ chmod u+x *sh
 
 Scripts can then be executed from within the directory:
 
-$ ./separate.sh /path/to/input/file.asc /path/to/output 12
+$ ./separate.sh /path/to/input/file /path/to/output num_of_files
 $ ./combine.sh /path/to/ASCII/files outputfile.asc
 
 The ASCII_Grids folder contains three ASCII grid files that were used for
