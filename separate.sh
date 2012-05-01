@@ -19,20 +19,15 @@ OUTPATH=$2
 NUMFILES=$3
 
 NCOLS=`grep 'ncols' $INFILE | tr -d '\r'`
-echo $NCOLS
 NROWS=`grep 'nrows' $INFILE | tr -d '\r' | awk '{ print $2 }'`
-echo $NROWS
 XLLCORNER=`grep 'xllcorner' $INFILE | tr -d '\r'`
 YLLCORNER=`grep 'yllcorner' $INFILE | tr -d '\r'`
 CELLSIZE=`grep 'cellsize' $INFILE | tr -d '\r'`
 NODATA=`grep 'NODATA_value' $INFILE | tr -d '\r'`
 
 NROWSnew=`printf "%d\n" $[$NROWS / $NUMFILES]`
-echo $NROWSnew
 TAIL=`printf "%d\n" $[$NROWSnew * $NUMFILES]`
-echo $TAIL
 OUTFILE=$OUTPATH/${INFILE/.*}
-echo $OUTFILE
 
 let NUM=$NUMFILES i=1
 while ((i<=NUM))
@@ -40,6 +35,5 @@ do
     printf "%b\n" "$NCOLS" "nrows\t$NROWSnew" "$XLLCORNER" "$YLLCORNER" "$CELLSIZE" "$NODATA" > $OUTFILE_$i.asc
     tail -n $TAIL $INFILE | head -n $NROWSnew >> $OUTFILE_$i.asc
     TAIL=`expr $TAIL - $NROWSnew`
-    echo $TAIL
     let i++
 done
