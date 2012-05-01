@@ -5,10 +5,10 @@
 #
 #    Call script as follows:
 #
-#    ./combineASCII.sh /path/to/input/file /path/to/output num_of_files
+#    ./separate.sh /path/to/input/file /path/to/output num_of_files
 #    
 #    eg:
-#    ./combineASCII.sh /path/to/input/file.asc /path/to/output 12
+#    ./separate.sh /path/to/input/file.asc /path/to/output 12
 #
 #    Author: Bastian Bentlage
 #    Email: bastian.bentlage@gmail.com

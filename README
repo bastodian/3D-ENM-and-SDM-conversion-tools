@@ -7,6 +7,19 @@ for 3D Ecological Niche and Species Distribution Modeling:
 Refer to the comments of the scripts for information on their use. Both
 scripts are written in Bash and should work on Linux, MacOS, and Cygwin.
 
+A zip archive can be downloaded from:
+https://github.com/bastodian/3D-ENM-and-SDM-conversion-tools/zipball/master
+
+After unzipping the archive, make the files executable using chmod. 
+Eg, navigate to the directory where you put the scripts. 
+
+$ chmod u+x *sh
+
+Scripts can then be executed from within the directory:
+
+$ ./separate.sh /path/to/input/file.asc /path/to/output 12
+$ ./combine.sh /path/to/ASCII/files outputfile.asc
+
 The ASCII_Grids folder contains three ASCII grid files that were used for
 3D ENM/SDM. These grids were derived from the variables of the WORLD OCEAN
 ATLAS 2005.
