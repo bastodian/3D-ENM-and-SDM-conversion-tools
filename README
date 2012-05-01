@@ -7,5 +7,11 @@ for 3D Ecological Niche and Species Distribution Modeling:
 Refer to the comments of the scripts for information on their use. Both
 scripts are written in Bash and should work on Linux, MacOS, and Cygwin.
 
+The ASCII_Grids folder contains three ASCII grid files that were used for
+3D ENM/SDM. These grids were derived from the variables of the WORLD OCEAN
+ATLAS 2005. 
+NOAA National Oceanographic Data Center: 
+http://www.nodc.noaa.gov/OC5/WOA05/pr_woa05.html
+
 Author: Bastian Bentlage
-Email: bastodian@gmail.com
+Email: bastian.bentlage@gmail.com

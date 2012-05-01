@@ -8,7 +8,7 @@
 #    ./combineASCII.sh /path/to/ASCII/files outputfile.asc
 #
 #    Author: Bastian Bentlage
-#    Email: bastodian@gmail.com
+#    Email: bastian.bentlage@gmail.com
 #    License: Creative Commons Attribution
 
 ASCII=$1
@@ -22,12 +22,12 @@ do
      FILES[$POS]=$FILE
 done
 
-NCOLS=`grep 'ncols' ${FILES[0]}`
-NROWS=`grep 'nrows' ${FILES[0]} | awk '{ print $2 }'`
-XLLCORNER=`grep 'xllcorner' ${FILES[0]}`
-YLLCORNER=`grep 'yllcorner' ${FILES[0]}`
-CELLSIZE=`grep 'cellsize' ${FILES[0]}`
-NODATA=`grep 'NODATA_value' ${FILES[0]}`
+NCOLS=`grep 'ncols' ${FILES[0]} | tr -d '\r'`
+NROWS=`grep 'nrows' ${FILES[0]} | tr -d '\r' | awk '{ print $2 }'`
+XLLCORNER=`grep 'xllcorner' ${FILES[0]} | tr -d '\r'`
+YLLCORNER=`grep 'yllcorner' ${FILES[0]} | tr -d '\r'`
+CELLSIZE=`grep 'cellsize' ${FILES[0]} | tr -d '\r'`
+NODATA=`grep 'NODATA_value' ${FILES[0]} | tr -d '\r'`
 
 NROWSnew=`printf $[$NROWS * ${#FILES[@]}]`
 
