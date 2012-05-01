@@ -9,7 +9,7 @@ scripts are written in Bash and should work on Linux, MacOS, and Cygwin.
 
 The ASCII_Grids folder contains three ASCII grid files that were used for
 3D ENM/SDM. These grids were derived from the variables of the WORLD OCEAN
-ATLAS 2005. 
+ATLAS 2005.
 NOAA National Oceanographic Data Center: 
 http://www.nodc.noaa.gov/OC5/WOA05/pr_woa05.html
 
